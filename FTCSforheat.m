@@ -1,6 +1,6 @@
 % --- state problem
 
-alpha = 16*10^(-4); %corresponds to diffusion constant
+alpha = 16*10^(-3); %corresponds to diffusion constant
 
 % --- Define constaints and initial condition
 L = 1; % length of domain in x direction
@@ -14,8 +14,8 @@ r2 = 1 - 2*r;
 % --- Loop over time steps
 t = 0;
 X = 0:dx:L;
-%u = normpdf(X,0.3, 10^(-3)); % initial condition
-u = sin(pi*X); % initial condition
+u = normpdf(X,0.3, 10^(-3)); % initial condition
+% u = sin(pi*X); % initial condition
 plot(X,u);
 axis([0 1 0 4.5]);
 pause(0.001)
